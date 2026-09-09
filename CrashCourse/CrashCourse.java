@@ -1,4 +1,7 @@
 package CrashCourse;
+
+import java.util.ArrayList;
+
 public class CrashCourse {
     
     public static void main(String[] args) {
@@ -26,6 +29,93 @@ public class CrashCourse {
 
         int[][] arryGrid1 = new int[4][3]; //[rows] then [collumns]
         System.out.println("Rows: " + arryGrid1.length + "\nCollumns: " + arryGrid1[0].length);
+
+        int[][] arryGrid2 = {{7, 8, 9},
+                             {4, 5, 6},
+                             {1, 2, 3}};
+
+        System.out.println(arryGrid2[0][1] + arryGrid2[1][0]); //access number 8
+        System.out.println(arryGrid2[2][2]); //access number 3
+
+        System.out.println(arryGrid2);
+
+        // ArrayList
+        // Can be any size, lots of built in function to help
+        // Avoid primative data types. Special classes for Int Double Boolean and String. Called "wrapper classes"
+        ArrayList<String> arryLst = new ArrayList<>();
+
+        arryLst.add("Word 1"); 
+        arryLst.add("Word 2"); 
+        arryLst.add("Word 3");
+        arryLst.remove(0);
+        arryLst.add(0, "Word 4");
+        arryLst.set(2, "Word 5");
+        System.out.println(arryLst);
+        System.out.println(arryLst.size());
+        System.out.println(arryLst.get(2));
+
+        // Math Class
+        Math.max(7,3);
+        Math.min(5,9);
+        Math.sqrt(14);
+        Math.abs(-22);
+
+        //boolean
+        boolean tru = true; boolean fal = false;
+
+        if(fal) {
+            System.out.println("Reached first condition");
+        } else {
+            System.out.println("Reached Else");
+        }
+
+         if(fal) {
+            System.out.println("Reached first condition");
+        } else if (!tru) {
+            System.out.println("Reached second condition");
+        } else {
+            System.out.println("Reached else");
+        }
+
+        // Iteration
+        // while loop
+        int x = 5;
+        while (x < 10) {
+            System.out.println(x + " ");
+            x++;
+        }
+
+        //for loop
+        // initialize variable for index; give it a conditional; increment decrement
+        
+        
+
+        for(int i = 0; i < 5; i++) {
+            System.out.println(i);
+        }
+
+        ArrayList<String> animals = new ArrayList<>();
+        animals.add("Sheep");
+        animals.add("Dog");
+        animals.add("Duck");
+        System.out.println("ArrayList " + animals);
+
+        for (String s : animals) {
+            System.out.println("We saw a " + s);
+        }
+
+        double[] arry =  {5.1, 6.7, 9.4, 4.1, 6.9};
+        System.out.println("Memory address " + arry);
+        for (int i = 1; i < arry.length; i++) {
+            System.out.println(arry[i]);
+        }
+
+        int[][] arryMatrix = { {41, 67, 69}, {21, 49, 17}, {98, 20, 4} };
+        
+        for(int row = 0; row < arryMatrix.length; row++) {
+            for(int col = 0; col < arryMatrix[row].length; col++)
+                System.out.println(arryMatrix[row][col] + " ");
+        }
 
         // comment
 
