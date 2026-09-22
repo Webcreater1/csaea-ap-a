@@ -1,3 +1,4 @@
+package CrashCourse;
 public class HolyKnight {
     
     String characterName;
