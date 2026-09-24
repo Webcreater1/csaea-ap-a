@@ -1,4 +1,4 @@
-package CrashCourse;
+package CrashCourse; 
 
     public class Car {
     
@@ -26,13 +26,14 @@ package CrashCourse;
             if (damageAmount > 10) {
                 System.out.println("Sorry man your car is wrecked!");
                 isDamaged = true;
+                cost = 0;
             }
             else if (damageAmount > 5 && damageAmount < 10) {
-                cost -= 25000; 
+                cost -= 25000.00; 
                 System.out.println("You've got some major damage but its fixable!"); 
             }
             else if (damageAmount < 5) {
-                cost -= 10000;
+                cost -= 10000.00;
                 System.out.println("You've got some minor damage but its easy to fix!");
             }
         }
@@ -49,17 +50,17 @@ package CrashCourse;
 
         public void maintenance (int degreeDone) {
             if (degreeDone <= 1) {
-                cost += 2500;
+                cost += 2500.00;
                 milesPerGallon += 1;
                 System.out.println("You've improved your car!");
             }
             if (degreeDone < 3 && degreeDone > 1) {
-                cost += 5000;
+                cost += 5000.00;
                 milesPerGallon += 2;
                 System.out.println("You've improved your car by a good amount!");
             }
             if (degreeDone >= 3) {
-                cost += 7500;
+                cost += 7500.00;
                 milesPerGallon += 3;
                 System.out.println("You've improved your car by a lot!");
             }
