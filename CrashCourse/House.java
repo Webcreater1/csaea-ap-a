@@ -21,6 +21,43 @@
 
         }
 
+        public void setAddress(String newLocation) {
+            address = newLocation;
+        }
+
+        public String getAddress () {
+            System.out.println(address);
+            return address;
+        }
+
+
+        public void setSquareFeet(int newSquareFeet) {
+            sqaureFeet = newSquareFeet;
+        }
+
+        public int getSqaureFeet() {
+            System.out.println(sqaureFeet);
+            return sqaureFeet;
+        }
+
+        public double getCost() {
+            System.out.println(cost);
+            return cost;
+        }
+
+        public void setCost(double setNewCost) {
+            cost = setNewCost;
+        }
+
+        public void setHaveBackyard(boolean setHaveBackyard) {
+            haveBackyard = setHaveBackyard;
+        }
+
+        public boolean getHaveBackyard() {
+            System.out.println(haveBackyard);
+            return haveBackyard;
+        }
+
         public void addRoom() {
             sqaureFeet += 100;
             cost += 5000;
