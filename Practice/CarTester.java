@@ -1,6 +1,6 @@
-package CrashCourse; 
+package Practice;
 
-    public class CarTester {
+public class CarTester {
         
         public static void main(String[] args) {
 

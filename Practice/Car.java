@@ -1,4 +1,4 @@
-package CrashCourse; 
+package Practice; 
 
     public class Car {
     
