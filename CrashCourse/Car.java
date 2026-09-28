@@ -37,8 +37,14 @@ package CrashCourse;
                 System.out.println("You've got some minor damage but its easy to fix!");
             }
         }
+
+        public void repair () {
+            isDamaged = false;
+            cost += 10000;
+        }
     
         public void changeLicensePlate (String newLicensePlateNumber) {
+            System.out.println("Your old licencePlate was " + licencePlate);
             licencePlate = newLicensePlateNumber;
             System.out.println("Your new licence plate number is " + newLicensePlateNumber);
         }
@@ -49,20 +55,21 @@ package CrashCourse;
         }
 
         public void maintenance (int degreeDone) {
+            System.out.println(cost);
             if (degreeDone <= 1) {
                 cost += 2500.00;
                 milesPerGallon += 1;
-                System.out.println("You've improved your car!");
+                System.out.println("You've improved your car! It now costs " + cost);
             }
             if (degreeDone < 3 && degreeDone > 1) {
                 cost += 5000.00;
                 milesPerGallon += 2;
-                System.out.println("You've improved your car by a good amount!");
+                System.out.println("You've improved your car by a good amount! It now costs " + cost);
             }
             if (degreeDone >= 3) {
                 cost += 7500.00;
                 milesPerGallon += 3;
-                System.out.println("You've improved your car by a lot!");
+                System.out.println("You've improved your car by a lot! It now costs " + cost);
             }
         }
     
