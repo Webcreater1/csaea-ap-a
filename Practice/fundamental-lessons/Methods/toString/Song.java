@@ -1,3 +1,4 @@
+package Methods.toString;
 /*
  * Song: blueprint for Song objects.
  * New method: toString()
