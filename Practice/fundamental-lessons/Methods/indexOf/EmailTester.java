@@ -17,8 +17,8 @@ public class EmailTester {
         System.out.println(word.indexOf("z"));
         System.out.println(word.indexOf("B"));
 
-        Email michael = new Email("mharrell@nhvweb.net");
-        Email john = new Email("jmarran@student.nhvweb.net");
+        Email michael = new Email("michael.harrell@nhvweb.net");
+        Email john = new Email("john.marran@student.nhvweb.net");
 
         System.out.println(michael.toString());
         System.out.println(michael.getAtIndex());
@@ -27,6 +27,14 @@ public class EmailTester {
         System.out.println(john.getUser());
         System.out.println(michael.getDomain());
         System.out.println(john.getDomain());
+        System.out.println(john.getFirstName());
+        System.out.println(michael.getFirstName());
+        System.out.println(john.changeDomain("yahoo.com"));
+        System.out.println(michael.changeDomain("comcast.net"));
+        System.out.println(john.isSchool());
+        System.out.println(michael.isSchool());
+        System.out.println(john.getLabel());
+        System.out.println(michael.getLabel());
     }
 
 }
