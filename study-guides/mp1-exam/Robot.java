@@ -51,4 +51,10 @@ public class Robot {
             return serial.indexOf(part) != -1;
      
      }
+
+   public void randomDrain() {
+      double drain = Math.random() * 10;
+      battery = Math.max(0, battery - drain);
+   }
+
 }
