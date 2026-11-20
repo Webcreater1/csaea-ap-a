@@ -9,8 +9,11 @@ public class ArrayListsTester {
         ArrayLists.showIndex(animals);
 
         ArrayLists.findIndex(animals, "Blobfish");
-        System.out.println(index);
-        
+
+        ArrayLists.modeifyAnimals(animals);
+
+        ArrayLists.numberUtilities();
+
 
     }
 }
