@@ -14,6 +14,16 @@ public class ArrayListsTester {
 
         ArrayLists.numberUtilities();
 
+        ArrayLists.membershipCheck(animals);
+
+        ArrayLists.copyList();
+
+        ArrayLists.removeShortNames(animals);
+
+        ArrayLists.removeAll(animals, "aye-aye");
+
+        ArrayLists.longNames(animals);
+
 
     }
 }
